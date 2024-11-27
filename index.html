@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="search-box">
+        <h1>Weather App</h1>
+
+        <!-- City Search Section -->
+        <div class="search-input">
+          <input type="text" id="cityInput" placeholder="Enter a city" />
+          <button id="searchButton">Search</button>
+        </div>
+
+        <!-- City Suggestions List -->
+        <ul id="suggestions" class="suggestions-list"></ul>
+
+        <!-- Weather Data Display -->
+        <div class="svg">
+          <!-- OpenWeather Widget Container -->
+          <div id="openweathermap-widget-11" class="weather-widget"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Load d3.js before the weather widget script -->
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
